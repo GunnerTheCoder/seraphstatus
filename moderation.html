@@ -8,14 +8,26 @@
 </head>
 <body>
     <h1>Moderation Management</h1>
+
+    <div id="moderation-check">
+        <p>Check Moderation Status:</p>
+        <input type="text" id="check-username" placeholder="Enter username to check">
+        <button onclick="checkModerationStatus()">Check Status</button>
+        <div id="check-result"></div>
+    </div>
     
+    <hr>
+
     <div id="moderation-management">
         <p>Update Moderation Status:</p>
-        <input type="text" id="moderation-username" placeholder="Username">
+        <input type="text" id="moderation-username" placeholder="Enter username to update">
         <select id="moderation-status">
-            <option value="active">Active</option>
-            <option value="warned">Warned</option>
-            <option value="banned">Banned</option>
+            <option value="Striked">Striked</option>
+            <option value="Suspended">Suspended</option>
+            <option value="ZTP Program">ZTP Program</option>
+            <option value="Banned">Banned</option>
+            <option value="Perm Banned">Perm Banned</option>
+            <option value="Blacklisted">Blacklisted</option>
         </select>
         <button onclick="updateModeration()">Update Status</button>
     </div>
