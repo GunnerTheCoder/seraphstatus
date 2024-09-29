@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Moderation Management</h1>
+    
+    <div id="moderation-management">
+        <p>Update Moderation Status:</p>
+        <input type="text" id="moderation-username" placeholder="Username">
+        <select id="moderation-status">
+            <option value="active">Active</option>
+            <option value="warned">Warned</option>
+            <option value="banned">Banned</option>
+        </select>
+        <button onclick="updateModeration()">Update Status</button>
+    </div>
+
+    <button onclick="location.href='index.html'">Go to Users & Money</button>
+
+    <div id="moderation-result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
